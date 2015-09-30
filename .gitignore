@@ -1,5 +1,14 @@
 *.class
 *.log
+*.swp
+
+# Maven Build Directory
+target
+
+# Idea IDE
+.idea
+*.iml
+*.launch
 
 # sbt specific
 .cache
