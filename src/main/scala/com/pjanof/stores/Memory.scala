@@ -12,7 +12,7 @@ import com.typesafe.scalalogging.StrictLogging
 
 /** DO NOT USE IN PRODUCTION, INTENDED FOR TESTING ONLY
   */
-class Memory() extends DocumentStore with StrictLogging {
+class Memory private() extends DocumentStore with StrictLogging {
 
   val tmap: TrieMap[String, String] = new TrieMap[String, String]()
 

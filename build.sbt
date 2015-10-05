@@ -11,15 +11,13 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= {
-  val akkaV  = "2.3.12"
-  val sprayV = "1.3.3"
-
   Seq(
       "com.typesafe.scala-logging"  %%  "scala-logging"                       % "3.1.0"
     , "org.scalaz"                  %%  "scalaz-core"                         % "7.1.3"
     , "com.couchbase.client"        %   "couchbase-client"                    % "1.4.9"
     , "com.typesafe.akka"           %%  "akka-http-spray-json-experimental"   % "1.0"
     , "joda-time"                   %   "joda-time"                           % "2.8.2"
+    , "org.apache.kafka"            %%  "kafka"                               % "0.8.2.2"
     , "org.scalatest"               %%  "scalatest"                           % "2.2.4" % "test")
 }
 

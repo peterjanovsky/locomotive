@@ -33,7 +33,7 @@ import java.net.URI
 import scalaz._
 import Scalaz._
 
-class Couchbase(uris: List[URI], bucket: String, username: String, password: String, timeout: Long) extends DocumentStore {
+class Couchbase private(uris: List[URI], bucket: String, username: String, password: String, timeout: Long) extends DocumentStore {
 
   private val logger: Logger = Logger(LoggerFactory.getLogger(getClass))
 
