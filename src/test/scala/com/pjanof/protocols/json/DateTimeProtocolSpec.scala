@@ -5,9 +5,7 @@ import org.scalatest._
 
 import spray.json._
 
-trait DateTimeProtocols extends DateTimeProtocol {
-  implicit val dateTimeFormat = DateTimeFormat
-}
+trait DateTimeProtocols extends DateTimeProtocol
 
 class DateTimeProtocolSpec extends FlatSpec with Matchers with DateTimeProtocols {
 

@@ -2,11 +2,10 @@ package com.pjanof.protocols.json
 
 import java.util.UUID
 import org.scalatest._
+
 import spray.json._
 
-trait UUIDProtocols extends UUIDProtocol {
-  implicit val uuidFormat = UUIDFormat
-}
+trait UUIDProtocols extends UUIDProtocol
 
 class UUIDProtocolSpec extends FlatSpec with Matchers with UUIDProtocols {
 
