@@ -19,6 +19,7 @@ import scala.concurrent.ExecutionContext
 import scala.concurrent.Future
 import scala.concurrent.Promise
 
+/*
 class Kafka[K,V] private(config: KafkaConfig) extends MessageStore
   with StrictLogging {
 
@@ -78,3 +79,4 @@ object KafkaConfig {
 
   def apply(config: Config): KafkaConfig = new KafkaConfig(config)
 }
+*/
